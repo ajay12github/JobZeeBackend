@@ -10,6 +10,7 @@ export const isAuthorized = async(req , res , next)=>{
     
    try{
    const {token} = req.cookies
+   console.log(req.cookies);
    if(!token)
    {
 
