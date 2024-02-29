@@ -13,7 +13,7 @@ export const isAuthorized = async(req , res , next)=>{
    if(!token)
    {
 
-    return next(new ErrorHandler("user not authorized" , 400));
+    return next(new ErrorHandler("user not authorized no token"  , 400));
    }
    
    const decoded = jwt.verify(token , process.env.JWT_SECRET_KEY)
