@@ -16,7 +16,7 @@ dotenv.config({path :"./config/config.env"})
 
 
 app.use(cors({
-    origin:[process.env.FRONTEND_URL] , 
+    origin:[process.env.FRONTEND_URL , "https://job-zee-frontend.vercel.app"] , 
     methods: ['GET', 'POST', 'PUT', 'DELETE'] ,
     credentials: true,
 }));
